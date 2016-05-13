@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="PracticePortal.Mobile">
+<head>
+    <meta charset="utf-8" />
+    <title>PracticePortal.Mobile</title>
+
+    <!-- CordovaAngularStaterKit references -->
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body data-ng-controller="homeController">
+    <header class="header">
+        <img src="img/menu-alt-512.png" class="menu-icon-style" />
+        <div class="header-title">Documents</div>
+    </header>
+    <div style="padding-top:40px">
+        <p class="text-style">You are now logged in.</p>
+        <p class="text-style">{{ homeMessage }}</p>
+    </div>
+   
+    <button data-ng-click="clickButton()" class="button-style"><img src="img/slr-camera-xxl.png" class="icon-style" /></button>
+
+    <script src="cordova.js"></script>
+    <script src="cordova_plugins.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="libs/angular/angular.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
