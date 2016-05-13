@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09487805-20D6-4FBB-A709-785BCCBE88B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocumentOCR</RootNamespace>
+    <AssemblyName>DocumentOCR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CCH.AutoFill">
+      <HintPath>..\..\AutofillDependencies\CCH.AutoFill.dll</HintPath>
+    </Reference>
+    <Reference Include="CCH.AutoFill.Data">
+      <HintPath>..\..\AutofillDependencies\CCH.AutoFill.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CCH.AutoFill.Service">
+      <HintPath>..\..\AutofillDependencies\CCH.AutoFill.Service.exe</HintPath>
+    </Reference>
+    <Reference Include="CSS">
+      <HintPath>..\..\..\WPQ2\Bin\CSS.dll</HintPath>
+    </Reference>
+    <Reference Include="CSSContactAPI, Version=2016.200.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WPQ2\Bin\CSSContactAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="CSSInterface">
+      <HintPath>..\..\..\WPQ2\Bin\CSSInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\..\..\WPQ2\Bin\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FREngine">
+      <HintPath>..\..\AutofillDependencies\Interop.FREngine.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.S6RDBOM">
+      <HintPath>..\..\AutofillDependencies\Interop.S6RDBOM.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ISS.FormData">
+      <HintPath>..\..\AutofillDependencies\ISS.FormData.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.FormEditor">
+      <HintPath>..\..\AutofillDependencies\ISS.FormEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.FormLearning">
+      <HintPath>..\..\AutofillDependencies\ISS.FormLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.FormValidation">
+      <HintPath>..\..\AutofillDependencies\ISS.FormValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.FRDET">
+      <HintPath>..\..\AutofillDependencies\ISS.FRDET.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.ImageUtils">
+      <HintPath>..\..\AutofillDependencies\ISS.ImageUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.OpticalCharacterRecognition">
+      <HintPath>..\..\AutofillDependencies\ISS.OpticalCharacterRecognition.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.OpticalCharacterRecognition.Abbyy">
+      <HintPath>..\..\AutofillDependencies\ISS.OpticalCharacterRecognition.Abbyy.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.Pdf">
+      <HintPath>..\..\AutofillDependencies\ISS.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.Pdf.Images">
+      <HintPath>..\..\AutofillDependencies\ISS.Pdf.Images.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.Scan">
+      <HintPath>..\..\AutofillDependencies\ISS.Scan.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.Scan.EmptyScan">
+      <HintPath>..\..\AutofillDependencies\ISS.Scan.EmptyScan.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.Scan.Isis">
+      <HintPath>..\..\AutofillDependencies\ISS.Scan.Isis.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.Scan.Twain">
+      <HintPath>..\..\AutofillDependencies\ISS.Scan.Twain.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.UKFormProcessors">
+      <HintPath>..\..\AutofillDependencies\ISS.UKFormProcessors.dll</HintPath>
+    </Reference>
+    <Reference Include="ISS.WPFControls">
+      <HintPath>..\..\AutofillDependencies\ISS.WPFControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OCRWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScannedPhotoHelper.cs" />
+    <Compile Include="UploadPhotoResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WKUK.CCH.Document.DocMgmt.DocManager\WKUK.CCH.Document.DocMgmt.DocManager.csproj">
+      <Project>{4706e62e-db23-4bb1-bd32-4bce999845eb}</Project>
+      <Name>WKUK.CCH.Document.DocMgmt.DocManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WKUK.CCH.Document.DocMgmt.Entities\WKUK.CCH.Document.DocMgmt.Entities.csproj">
+      <Project>{f6b61ff9-e958-468f-9ef8-1a24c72c8df1}</Project>
+      <Name>WKUK.CCH.Document.DocMgmt.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

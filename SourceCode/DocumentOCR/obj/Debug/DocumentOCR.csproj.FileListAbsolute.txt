@@ -1,0 +1,5 @@
+E:\DMCodeGames\Bin\DocumentOCR.dll
+E:\DMCodeGames\Bin\DocumentOCR.pdb
+E:\DMCodeGames\Source\DocumentOCR\obj\Debug\DocumentOCR.csprojResolveAssemblyReference.cache
+E:\DMCodeGames\Source\DocumentOCR\obj\Debug\DocumentOCR.dll
+E:\DMCodeGames\Source\DocumentOCR\obj\Debug\DocumentOCR.pdb
